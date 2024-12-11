@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: rgb(8, 102, 255);
+    margin-bottom: 15px;
+}
+
+.container {
+    font-family: "Nunito Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    max-width: 601px;
+    background-color: #fff;
+    margin: 10px auto;    
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    flex-basis: auto;
+   
+
+    
+}
+
+.profile-image {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    flex-grow: 0;
+    
+}
+
+.status {
+    flex-grow: 1; /* ขยายเต็มพื้นที่ใน profile */
+
+
+}
+
+.status-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #555;
+    background-color: rgb(239, 240, 244);
+}
+
+.action1 {
+    display: flex;
+    justify-content: center;     /* ไม่มีการขยับ */
+    align-items: center;
+    padding: 5px;
+    flex-wrap: nowrap;   /* ไม่มีการขยับ */
+    flex-grow: 0;   /* ไม่มีการขยับ */
+    margin-top: 10px; /* เพิ่มระยะห่างระหว่าง profile และ action */
+    border-top: 1px solid #ddd; /* เพิ่มเส้นขอบบน action */
+    flex-basis: auto;
+
+}
+
+.action2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    flex-basis: 30%; /* กำหนดขนาดเริ่มต้นของ action2 */
+    flex-grow: 1; /* action2 ขยายเต็มพื้นที่ */
+
+   
+}
+
+
+.icon {
+    width: 24px;
+    margin-right: 5px; /* กำหนดระยะห่างระหว่างไอคอนและข้อความ */
+}
